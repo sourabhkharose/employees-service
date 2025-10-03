@@ -27,7 +27,6 @@ public class EmployeeController implements IEmployeeController<Employee, Employe
     }
 
     @Override
-    @RequestMapping()
     public ResponseEntity<List<Employee>> getEmployeesByNameSearch(String searchString) {
         return ResponseEntity.ok(employeeService.getEmployeesByNameSearch(searchString));
     }
